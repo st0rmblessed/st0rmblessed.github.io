@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Personal portfolio</title>
+    <link rel="stylesheet" href="main.css" type="text/css">
+    <link rel="icon" href="favicon.png" sizes="16x16" type="image/png">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+        crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png">
+    <link rel="manifest" href="icons/site.webmanifest">
+</head>
+
+<body>
+
+    <nav>
+        <div class="logo-container">
+            <a class="logo" href="#intro">Nelson Alves</a>
+        </div>
+
+        <ul class="navbar-container">
+            <li class="navbar-section"><a href="#about">About me</a></li>
+            <li class="navbar-section"><a href="#toolbox">Toolbox</a></li>
+            <li class="navbar-section"><a href="#projects">Projects</a></li>
+            <li class="navbar-section"><a href="#contacts">Contacts</a></li>
+
+        </ul>
+        <button>
+            <svg height="24" viewBox="0 0 12 16" version="1.1" width="18" aria-hidden="true">
+                <path fill-rule="evenodd" d="M11.41 9H.59C0 9 0 8.59 0 8c0-.59 0-1 .59-1H11.4c.59 0 .59.41.59 1 0 .59 0 1-.59 1h.01zm0-4H.59C0 5 0 4.59 0 4c0-.59 0-1 .59-1H11.4c.59 0 .59.41.59 1 0 .59 0 1-.59 1h.01zM.59 11H11.4c.59 0 .59.41.59 1 0 .59 0 1-.59 1H.59C0 13 0 12.59 0 12c0-.59 0-1 .59-1z">
+                </path>
+            </svg>
+        </button>
+        <ul class="dropdown-menu">
+            <li class="dropdown-menu-items"><a href="#about">About me</a></li>
+            <hr class="hr-dropdown">
+            <li class="dropdown-menu-items"><a href="#toolbox">Toolbox</a></li>
+            <hr class="hr-dropdown">
+            <li class="dropdown-menu-items"><a href="#projects">Projects</a></li>
+            <hr class="hr-dropdown">
+            <li class="dropdown-menu-items"><a href="#contacts">Contacts</a></li>
+        </ul>
+    </nav>
+
+    <section id="intro" class="intro">
+        <div class="intro-container">
+            <h1>Hey ! My name is Nelson Alves <span class="blink">|</span></h1>
+            <p>I'm a self-learning web developer from Portugal</p>
+        </div>
+
+    </section>
+
+    <section class="about" id="about">
+        <h2>About me</h2>
+        <p>Since my childhood I always had a passion for math and physics which lead me to pursuit a degree in
+            Engineering.
+            I graduated in Mechanical Enginering with a specialization in Energy and began to work in the energy audit
+            field. After a while I decided to pursuit
+            a career in IT. Nowadays I work as a functional analyst.
+        </p>
+        <p> I spend a lot of time learning new things and finding new hobbies. Some of my interests include Muay Thai
+            and stock trading. Now that you know a bit about me, take a look
+            at some of the projects that I worked.</p>
+    </section>
+    <hr>
+
+    <section class="about">
+        <h2>The road so far</h2>
+        <div class="timeline">
+            <div class="container left">
+                <div class="content">
+                    <h2 class="year">2017</h2>
+                    <p>Began to work in IT as a functional analyst </p>
+                </div>
+            </div>
+            <div class="container right">
+                <div class="content">
+                    <h2 class="year">2016</h2>
+                    <p>Began to work for an energy audit company</p>
+                </div>
+            </div>
+            <div class="container left">
+                <div class="content">
+                    <h2 class="year">2016</h2>
+                    <p>Finished my degree in Mechanical Engineering </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <hr>
+    <section class="toolbox" id="toolbox">
+        <h2>Toolbox</h2>
+        <div class="toolbox-icons">
+            <div>
+                <a href="https://en.wikipedia.org/wiki/HTML5" target="_blank"><img class="scale" src="icons/html5.svg"
+                        alt="" width="300px" height="150px"></a>
+                <span class="labels">HTML5</span>
+            </div>
+
+            <div>
+                <a href="https://en.wikipedia.org/wiki/Cascading_Style_Sheets" target="_blank"><img class="scale" src="icons/css3.svg"
+                        alt="" width="300px" height="150px"></a>
+                <span class="labels">CSS3</span>
+            </div>
+            <div>
+                <a href="https://en.wikipedia.org/wiki/JavaScript" target="_blank"><img class="scale" src="icons/js.svg"
+                        alt="" width="300px" height="150px"></a>
+                <span class="labels">JavaScript</span>
+            </div>
+            <div>
+                <a href="https://nodejs.org/en/" target="_blank"><img class="scale" src="icons/nodejs.svg" alt="" width="300px"
+                        height="150px"></a>
+                <span class="labels">Node.js</span>
+            </div>
+            <div>
+                <a href="https://angular.io/" target="_blank"><img class="scale" src="icons/angular.svg" alt="" width="300px"
+                        height="150px"></a>
+                <span class="labels">Angular</span>
+            </div>
+            <div>
+                <a href="https://www.mongodb.com/" target="_blank"><img class="scale" src="icons/mongodb.svg" alt=""
+                        width="300px" height="150px"></a>
+                <span class="labels">MongoDB</span>
+            </div>
+            <div>
+                <a href="https://www.drupal.org/8" target="_blank"><img class="scale" src="icons/drupal.svg" alt=""
+                        width="300px" height="150px"></a>
+                <span class="labels">Drupal 8</span>
+            </div>
+            <div>
+                <a href="https://github.com/" target="_blank"><img class="scale" src="icons/github.svg" alt="" width="300px"
+                        height="150px"></a>
+                <span class="labels">GitHub</span>
+            </div>
+            <div>
+                <a href="https://git-scm.com/" target="_blank"><img class="scale" src="icons/git.svg" alt="" width="300px"
+                        height="150px"></a>
+                <span class="labels">Git</span>
+            </div>
+        </div>
+    </section>
+    <hr>
+    <section class="projects" id="projects">
+        <h2>Projects</h2>
+        <div class="projects-list">
+            <div class="project">
+                <h4 class="labels">Integra-te</h4>
+                <img class="project-gif" src="icons/Integra-te.gif" alt="">
+                <div class="see-code">See code</div>
+                <div class="tech-used">
+                    <img class="tech-used-icons" src="icons/html5.svg" alt="">
+                    <img class="tech-used-icons" src="icons/css3.svg" alt="">
+                </div>
+            </div>
+            <div class="project">
+                <h4 class="labels">Placeholder 2</h4>
+                <img class="project-gif" src="icons/github.svg" alt="">
+                <div class="see-code">See code</div>
+                <div class="tech-used">
+                    <img class="tech-used-icons" src="icons/html5.svg" alt="">
+                    <img class="tech-used-icons" src="icons/css3.svg" alt="">
+                </div>
+            </div>
+            <div class="project">
+                <h4 class="labels">Placeholder 3</h4>
+                <img class="project-gif" src="icons/github.svg" alt="">
+                <div class="see-code">See code</div>
+                <div class="tech-used">
+                    <img class="tech-used-icons" src="icons/html5.svg" alt="">
+                    <img class="tech-used-icons" src="icons/css3.svg" alt="">
+                </div>
+            </div>
+            <div class="project">
+                <h4 class="labels">Placeholder 4</h4>
+                <img class="project-gif" src="icons/github.svg" alt="">
+                <div class="see-code">See code</div>
+                <div class="tech-used">
+                    <img class="tech-used-icons" src="icons/html5.svg" alt="">
+                    <img class="tech-used-icons" src="icons/css3.svg" alt="">
+                </div>
+            </div>
+            <div class="project">
+                <h4 class="labels">Placeholder 5</h4>
+                <img class="project-gif" src="icons/github.svg" alt="">
+                <div class="see-code">See code</div>
+                <div class="tech-used">
+                    <img class="tech-used-icons" src="icons/html5.svg" alt="">
+                    <img class="tech-used-icons" src="icons/css3.svg" alt="">
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <footer id="contacts">
+        <a href="https://github.com/st0rmblessed" target="_blank">
+            <i class="fab fa-github icon icon-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/nelson-alves/" target="_blank">
+            <i class="fab fa-linkedin icon icon-linkdin"></i>
+        </a>
+        <a href="mailto:nelsonalves93@hotmail.com" target="_blank">
+            <i class="fas fa-envelope icon icon-mail"></i>
+        </a>
+        <br>
+        <span class="signature">
+            © Nelson Alves 2019 All rights reserved
+        </span>
+    </footer>
+
+</body>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+<script src="main.js"></script>
+
+</html>

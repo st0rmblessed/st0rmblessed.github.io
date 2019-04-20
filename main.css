@@ -1,0 +1,493 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    background:#ECEFF1;
+    font-family: "Fira Sans",-apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Roboto", "Oxygen", "Droid Sans", "Ubuntu", "Cantarell", "Helvetica Neue";
+}
+
+section{
+    padding: 40px 15%;
+    
+}
+
+footer{
+    padding: 20px;
+    text-align: center;
+    background:  #263138;
+}
+
+h2{
+    padding: 40px;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 3em;
+    margin-top: 0px;
+    color: #2c4247
+}
+
+button{
+    border: 0;
+    display: none;
+    padding-right: 20px;
+    position: relative;
+    background-color:#263138;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    button{
+        display: block;
+    }
+}
+
+svg path {
+    fill:#9feaf9;
+}
+
+nav{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    background-color:#263138;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    nav{
+       justify-content: space-between;
+    }
+}
+
+li{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+hr{
+    color: #2b323b;
+    margin: 0 15%;
+}
+
+.intro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: #2b323b;
+    color: #9feaf9;
+    margin-top: 58px;
+    text-align: center;
+}
+
+.about{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about > p{
+    color:#2c4247;
+    font-size: 18px;
+    text-align: justify;
+}
+
+.toolbox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.projects{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.navbar-container{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    background:  #263138;
+    margin: 0;
+    padding: 0;
+ 
+}
+
+@media screen and (max-width: 768px) {
+    .navbar-container{
+        display: none;
+    }
+}
+
+.navbar-container > li > a {
+    color: #9feaf9;
+    text-decoration: none;
+    padding: 20px;
+    display: block;
+}
+
+.icon{
+    font-size: 48px;
+    margin: 10px 10px 20px 10px;
+    color: #535b62;
+}
+
+.icon-github:hover{
+    color: black;
+    transition: 0.3s;
+}
+
+.icon-linkdin:hover{
+    color: #4875B4;
+    transition: 0.3s;
+}
+
+.icon-mail:hover{
+    color: #ffc04c;
+    transition: 0.3s;
+}
+
+.toolbox-icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+    padding-bottom: 70px;
+}
+
+.scale{
+    transition: all 0.5s;
+}
+.scale:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.labels{
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10%;
+    color: #2c4247;
+}
+
+.dropdown-menu{
+    position: absolute;
+    display: none;
+    background-color:#263138;
+    top: 42px;
+    width: 100%;
+    padding: 0;
+}
+
+.logo-container{
+    display: flex;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+    padding: 20px;
+    width: 160px;
+}
+
+.logo{
+    color: #9feaf9;
+    font-weight: bold;
+}
+
+.dropdown-menu-items{
+    padding: 20px;
+    text-align: center;
+}
+
+.dropdown-menu-items > a {
+    color: #9feaf9;
+}
+
+.projects-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+    padding-bottom: 70px;
+}
+
+.project{
+    position: relative;
+}
+
+.see-code{
+    border: 2px solid #274c54;
+    padding: 10px;
+    border-radius: .25em;
+    visibility: hidden;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    color: #ECEFF1;
+}
+
+.tech-used{
+    padding: 10px;
+    visibility: hidden;
+    position: absolute;
+    top: 84%;
+}
+
+.tech-used-icons{
+    width: 40px;
+    height: 35px;
+}
+
+.see-code:hover{
+    background:#274c54;
+    cursor: pointer;
+}
+
+.project:hover .see-code{
+    visibility: visible;
+}
+
+.project:hover .tech-used{
+    visibility: visible;
+}
+
+.project-gif:hover{
+    filter: brightness(60%);
+}
+
+.signature{
+    color:#9feaf9;
+}
+
+.intro-container{
+    border: 2px solid #9feaf9;
+    padding: 10px;
+}
+
+.hr-dropdown{
+    color:#9feaf9;
+    margin: 0 15%;
+}
+
+.project-gif{
+    width: 350px;
+    height: 250px;
+}
+
+.navbar-section:hover{
+  transform: scale(1.1);
+  transition: 0.1s;
+}
+
+.blink {
+    font-weight: 100;
+    font-size: 30px;
+    color: #9feaf9;
+    -webkit-animation: 1s blink step-end infinite;
+    -moz-animation: 1s blink step-end infinite;
+    -ms-animation: 1s blink step-end infinite;
+    -o-animation: 1s blink step-end infinite;
+    animation: 1s blink step-end infinite;
+  }
+  
+  @keyframes "blink" {
+    from, to {
+      color: transparent;
+    }
+    50% {
+      color: #9feaf9;
+    }
+  }
+  
+  @-moz-keyframes blink {
+    from, to {
+      color: transparent;
+    }
+    50% {
+      color: #9feaf9;
+    }
+  }
+  
+  @-webkit-keyframes "blink" {
+    from, to {
+      color: transparent;
+    }
+    50% {
+      color: #9feaf9;
+    }
+  }
+  
+  @-ms-keyframes "blink" {
+    from, to {
+      color: transparent;
+    }
+    50% {
+      color: #9feaf9;
+    }
+  }
+  
+  @-o-keyframes "blink" {
+    from, to {
+      color: transparent;
+    }
+    50% {
+      color: #9feaf9;
+    }
+  }
+
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+
+  
+  /* The actual timeline (the vertical ruler) */
+  .timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* The actual timeline (the vertical ruler) */
+  .timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: white;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+  }
+  
+  /* Container around content */
+  .container {
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+  }
+  
+  /* The circles on the timeline */
+  .container::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -17px;
+    background-color: white;
+    border: 4px solid #2c4247;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+  }
+  
+  /* Place the container to the left */
+  .left {
+    left: 0;
+  }
+  
+  /* Place the container to the right */
+  .right {
+    left: 50%;
+  }
+  
+  /* Add arrows to the left container (pointing right) */
+  .left::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    right: 30px;
+    border: medium solid white;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent white;
+  }
+  
+  /* Add arrows to the right container (pointing left) */
+  .right::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    left: 30px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+  }
+  
+  /* Fix the circle for containers on the right side */
+  .right::after {
+    left: -16px;
+  }
+  
+  /* The actual content */
+  .content {
+    padding: 10px;
+    background-color: white;
+    position: relative;
+    border-radius: 6px;
+  }
+  
+  /* Media queries - Responsive timeline on screens less than 600px wide */
+  @media screen and (max-width: 600px) {
+  /* Place the timelime to the left */
+    .timeline::after {
+      left: 31px;
+    }
+  
+  /* Full-width containers */
+    .container {
+      width: 100%;
+      padding-left: 70px;
+      padding-right: 25px;
+    }
+  
+  /* Make sure that all arrows are pointing leftwards */
+    .container::before {
+      left: 60px;
+      border: medium solid white;
+      border-width: 10px 10px 10px 0;
+      border-color: transparent white transparent transparent;
+    }
+  
+  /* Make sure all circles are at the same spot */
+    .left::after, .right::after {
+      left: 15px;
+    }
+  
+  /* Make all right containers behave like the left ones */
+    .right {
+      left: 0%;
+    }
+  }
+
+  .year{
+    padding: 0;
+    margin-bottom: 0;
+    font-size: 20px;
+  }
+
+ 
