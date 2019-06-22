@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Personal portfolio</title>
+    <link rel="stylesheet" href="main.css" type="text/css">
+    <link rel="icon" href="favicon.png" sizes="16x16" type="image/png">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png">
+    <link rel="manifest" href="icons/site.webmanifest">
+</head>
+
+<body>
+
+    <nav>
+        <div class="logo-container">
+            <a class="logo" href="#intro">Nelson Alves</a>
+        </div>
+
+        <ul class="navbar-container">
+
+            <li class="navbar-section"><a href="#toolbox">Toolbox</a></li>
+            <li class="navbar-section"><a href="#projects">Projects</a></li>
+            <li class="navbar-section"><a href="#contacts">Contacts</a></li>
+
+        </ul>
+        <button>
+            <svg height="24" viewBox="0 0 12 16" version="1.1" width="18" aria-hidden="true">
+                <path fill-rule="evenodd"
+                    d="M11.41 9H.59C0 9 0 8.59 0 8c0-.59 0-1 .59-1H11.4c.59 0 .59.41.59 1 0 .59 0 1-.59 1h.01zm0-4H.59C0 5 0 4.59 0 4c0-.59 0-1 .59-1H11.4c.59 0 .59.41.59 1 0 .59 0 1-.59 1h.01zM.59 11H11.4c.59 0 .59.41.59 1 0 .59 0 1-.59 1H.59C0 13 0 12.59 0 12c0-.59 0-1 .59-1z">
+                </path>
+            </svg>
+        </button>
+        <ul class="dropdown-menu">
+
+            <li class="dropdown-menu-items"><a href="#toolbox">Toolbox</a></li>
+            <hr class="hr-dropdown">
+            <li class="dropdown-menu-items"><a href="#projects">Projects</a></li>
+            <hr class="hr-dropdown">
+            <li class="dropdown-menu-items"><a href="#contacts">Contacts</a></li>
+        </ul>
+    </nav>
+
+    <h1 id="name">Hi, my name is John Doe</h1>
+    <div id="intro">
+        <h2 id="title">Web developer</h2>
+        <p id="text">I have studied Computer Science at Kingston University and now building up my development
+            skills to a professional level through personal projects </p>
+    </div>
+
+
+    <section class="toolbox" id="toolbox">
+        <h2>Toolbox</h2>
+        <div class="toolbox-icons">
+            <div>
+                <a href="https://en.wikipedia.org/wiki/HTML5" target="_blank"><img class="scale" src="icons/html5.svg"
+                        alt="" width="300px" height="150px"></a>
+                <span class="labels">HTML5</span>
+            </div>
+
+            <div>
+                <a href="https://en.wikipedia.org/wiki/Cascading_Style_Sheets" target="_blank"><img class="scale"
+                        src="icons/css3.svg" alt="" width="300px" height="150px"></a>
+                <span class="labels">CSS3</span>
+            </div>
+            <div>
+                <a href="https://en.wikipedia.org/wiki/JavaScript" target="_blank"><img class="scale" src="icons/js.svg"
+                        alt="" width="300px" height="150px"></a>
+                <span class="labels">JavaScript</span>
+            </div>
+            <div>
+                <a href="https://nodejs.org/en/" target="_blank"><img class="scale" src="icons/nodejs.svg" alt=""
+                        width="300px" height="150px"></a>
+                <span class="labels">Node.js</span>
+            </div>
+            <div>
+                <a href="https://angular.io/" target="_blank"><img class="scale" src="icons/angular.svg" alt=""
+                        width="300px" height="150px"></a>
+                <span class="labels">Angular</span>
+            </div>
+            <div>
+                <a href="https://www.mongodb.com/" target="_blank"><img class="scale" src="icons/mongodb.svg" alt=""
+                        width="300px" height="150px"></a>
+                <span class="labels">MongoDB</span>
+            </div>
+            <div>
+                <a href="https://www.drupal.org/8" target="_blank"><img class="scale" src="icons/drupal.svg" alt=""
+                        width="300px" height="150px"></a>
+                <span class="labels">Drupal 8</span>
+            </div>
+            <div>
+                <a href="https://github.com/" target="_blank"><img class="scale" src="icons/github.svg" alt=""
+                        width="300px" height="150px"></a>
+                <span class="labels">GitHub</span>
+            </div>
+            <div>
+                <a href="https://git-scm.com/" target="_blank"><img class="scale" src="icons/git.svg" alt=""
+                        width="300px" height="150px"></a>
+                <span class="labels">Git</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="projects" id="projects">
+        <h2>Projects</h2>
+        <div class="projects-item">
+            <div class="project">
+                <a class="project-link" href="https://www.google.pt">
+                    <img class="project-img" src="icons/angular.svg" alt="">
+                </a>
+                <div class="project-info">
+                    <h3 class="project-title">Integra-te</h3>
+                    <p class="project-description">My first project. A very simple website hosted on github pages about 
+                        the services provided by a friend of mine who is an yoga teacher.
+                        <br>
+                        Made only with html and css, not the greatest design but was a good opportunity to learn
+                        to use git and github
+                    </p>
+                    <div class="tech-used">
+                        <img class="tech-used-icons" src="icons/html5.svg" alt="">
+                        <img class="tech-used-icons" src="icons/css3.svg" alt="">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="projects-item">
+            <div class="project">
+                <a class="project-link" href="https://www.google.pt">
+                    <img class="project-img" src="icons/angular.svg" alt="">
+                </a>
+                <div class="project-info">
+                    <h3 class="project-title">Weather App</h3>
+                    <p class="project-description">No portolio is complete without a weather app. The idea is very simple, just type your location
+                        and the app will tell you some data about the weather.
+                        <br>
+                        Despite being a simple app, it was a good exercise to learn to work with API's and the setup of a nodejs server. The App makes use of OpenWeatherMap API. which I recommend as a free api to learn and get weather data. 
+                    </p>
+                    <div class="tech-used">
+                            <img class="tech-used-icons" src="icons/html5.svg" alt="">
+                            <img class="tech-used-icons" src="icons/css3.svg" alt="">
+                            <img class="tech-used-icons" src="icons/js.svg" alt="">
+                            <img class="tech-used-icons" src="icons/nodejs.svg" alt="">
+                        </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="projects-item">
+            <div class="project">
+                <a class="project-link" href="https://www.google.pt">
+                    <img class="project-img" src="icons/angular.svg" alt="">
+                </a>
+                <div class="project-info">
+                    <h3 class="project-title">Chat App</h3>
+                    <p class="project-description">My goal for this project was to allow players of the game, Castle
+                        Clash, to have a place to list their in-game heroes and find other players with the same
+                        loadout.
+                        <br>
+                        This was a personal (unfinished) project I picked up in my early days before understanding JS or
+                        CSS. My main purpose for developing this project was to try my hand at VueJS alongside a NoSQL
+                        database, Firebase RTDB.
+                    </p>
+                    <div class="tech-used">
+                            <img class="tech-used-icons" src="icons/html5.svg" alt="">
+                            <img class="tech-used-icons" src="icons/css3.svg" alt="">
+                        </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="projects-item">
+                <div class="project">
+                    <a class="project-link" href="https://www.google.pt">
+                        <img class="project-img" src="icons/angular.svg" alt="">
+                    </a>
+                    <div class="project-info">
+                        <h3 class="project-title">Air Pollution App</h3>
+                        <p class="project-description">My goal for this project was to allow players of the game, Castle
+                            Clash, to have a place to list their in-game heroes and find other players with the same
+                            loadout.
+                            <br>
+                            This was a personal (unfinished) project I picked up in my early days before understanding JS or
+                            CSS. My main purpose for developing this project was to try my hand at VueJS alongside a NoSQL
+                            database, Firebase RTDB.
+                        </p>
+                        <div class="tech-used">
+                                <img class="tech-used-icons" src="icons/html5.svg" alt="">
+                                <img class="tech-used-icons" src="icons/css3.svg" alt="">
+                            </div>
+                    </div>
+                </div>
+    
+            </div>
+            <div class="projects-item">
+                    <div class="project">
+                        <a class="project-link" href="https://www.google.pt">
+                            <img class="project-img" src="icons/angular.svg" alt="">
+                        </a>
+                        <div class="project-info">
+                            <h3 class="project-title">Net Wage App and Calculator</h3>
+                            <p class="project-description">My goal for this project was to allow players of the game, Castle
+                                Clash, to have a place to list their in-game heroes and find other players with the same
+                                loadout.
+                                <br>
+                                This was a personal (unfinished) project I picked up in my early days before understanding JS or
+                                CSS. My main purpose for developing this project was to try my hand at VueJS alongside a NoSQL
+                                database, Firebase RTDB.
+                            </p>
+                            <div class="tech-used">
+                                    <img class="tech-used-icons" src="icons/html5.svg" alt="">
+                                    <img class="tech-used-icons" src="icons/css3.svg" alt="">
+                                </div>
+                        </div>
+                    </div>
+        
+                </div>
+    </section>
+
+
+    <footer id="contacts">
+        <a href="https://github.com/st0rmblessed" target="_blank">
+            <i class="fab fa-github icon icon-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/nelson-alves/" target="_blank">
+            <i class="fab fa-linkedin icon icon-linkdin"></i>
+        </a>
+        <a href="mailto:nelsonalves93@hotmail.com" target="_blank">
+            <i class="fas fa-envelope icon icon-mail"></i>
+        </a>
+        <br>
+        <span class="signature">
+            © Nelson Alves 2019 All rights reserved
+        </span>
+    </footer>
+
+</body>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<script src="main.js"></script>
+
+</html>
