@@ -334,8 +334,8 @@ margin: 70px auto;
   margin-bottom: 1.122rem;
   transition: all .3s cubic-bezier(.25,.8,.25,1);
   background: black;
-  height: 300px;
-  width: 450px;
+  height: 100%;
+  width: 100%;
 }
 
 .project-info{
@@ -345,11 +345,6 @@ margin-left: 40px;
 @media screen and (max-width: 768px) {
    .project-info{
        margin-left: 0;
-   }
-
-   .project-img{
-       height: 250px;
-       width: 300px;
    }
 }
 
