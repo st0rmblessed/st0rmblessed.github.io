@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
         integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7CRoboto:400,400italic,700%7CRoboto+Mono&amp;display=swap">
     <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png">
@@ -46,14 +48,18 @@
         </ul>
     </nav>
 
-    <h1 id="name">Hi, my name is Nelson Alves</h1>
-    <div id="intro">
-        <h2 id="title">Web developer</h2>
-        <p id="text">I have a Masters in Mechanical Engineers but I'm currently working as a web developer.
-            The objective of this page is to showcase some of my personal projects, built to increase my knowledge
-            and expertise in the web world.
-        </p>
-    </div>
+    <section id="intro">
+            <div class="info">I have a Masters in Mechanical Engineers but I'm currently working as a web developer.
+                The objective of this page is to showcase some of my personal projects, built to increase my knowledge
+                and expertise in the web world.</div>
+            <div class="biography">
+                <h2>About me</h2>
+                <p>lorem ipsum</p>
+                <p>lorem ipsum</p>
+                <p>lorem ipsum</p>
+                <p>lorem ipsum</p>
+            </div>
+    </section>
 
 
     <section class="toolbox" id="toolbox">
@@ -124,7 +130,9 @@
     </section>
 
     <section class="projects" id="projects">
+
         <h2>Projects</h2>
+        <div>Projects toolset</div>
         <div class="projects-item">
             <div class="project">
                 <a class="project-link" target="_blank" href="https://integra-te.github.io/">
@@ -132,11 +140,7 @@
                 </a>
                 <div class="project-info">
                     <h3 class="project-title">Integra-te</h3>
-                    <p class="project-description">My first project. A very simple website hosted on github pages about
-                        the services provided by a friend of mine who is an yoga teacher.
-                        <br>
-                        Made only with html and css, not the greatest design but it was a good opportunity to learn
-                        to use git and github.
+                    <p class="project-description">A simple website hosted on github for a yoga teacher.
                     </p>
                     <div class="tech-used">
                         <img class="tech-used-icons" src="icons/html5.svg" alt="">
@@ -153,13 +157,7 @@
                 </a>
                 <div class="project-info">
                     <h3 class="project-title">Weather App</h3>
-                    <p class="project-description">No portolio is complete without a weather app. The idea is very
-                        simple, just type your location
-                        and the app will tell you some data about the weather.
-                        <br>
-                        Despite being a simple app, it was a good exercise to learn to work with API's and the setup of
-                        a nodejs server. The App makes use of OpenWeatherMap API. which I recommend as a free api to
-                        learn and get weather data.
+                    <p class="project-description">A weather app that uses OpenWeatherMap API to do display data.
                     </p>
                     <div class="tech-used">
                         <img class="tech-used-icons" src="icons/html5.svg" alt="">
@@ -178,10 +176,7 @@
                 </a>
                 <div class="project-info">
                     <h3 class="project-title">Chat App</h3>
-                    <p class="project-description">An app that serves as a chat room. You can see who's online and send and receibe messages in real time.
-                        <br>
-                        This projects leverages the socket.io library that allows to build chat apps in an easy and understable way using sockets. I highly recommend
-                        this library to learn more about sockets.
+                    <p class="project-description">An app that serves as a chat room leveraging socket.io library.
                     </p>
                     <div class="tech-used">
                         <img class="tech-used-icons" src="icons/html5.svg" alt="">
@@ -201,10 +196,8 @@
                 </a>
                 <div class="project-info">
                     <h3 class="project-title">Net Wage / Calculator App</h3>
-                    <p class="project-description">This app is a simple calculator that can also calculate your net wage (for portuguese residents). Currently it doesn't
-                        have all the data to compute the wage for all cases but can already be used for tests.
-                        <br>
-                        This was a my first attempt at a mobile app using ionic as the tool to convert a web app to a mobile one.
+                    <p class="project-description">A simple mobile calculator that can also calculate your net wage
+                        (for portuguese residents).
                     </p>
                     <div class="tech-used">
                         <img class="tech-used-icons" src="icons/html5.svg" alt="">
@@ -223,9 +216,7 @@
                 </a>
                 <div class="project-info">
                     <h3 class="project-title">Saving Entities</h3>
-                    <p class="project-description">This Drupal module allows the user to save entities of the type node and media in bulk using a configuration page.
-                        <br>
-                        This was my first drupal module and its full compatible with Drupal 9.
+                    <p class="project-description">A drupal module to save nodes and media in bulk.
                     </p>
                     <div class="tech-used">
                         <img class="tech-used-icons" src="icons/drupal.svg" alt="">
@@ -242,9 +233,7 @@
                 </a>
                 <div class="project-info">
                     <h3 class="project-title">Landing Page Scheduler</h3>
-                    <p class="project-description">This module allows the user to set a landing page for a limited duration using a configuration page.
-                        <br>
-                        This module is full compatible with Drupal 9.
+                    <p class="project-description">A drupal module to set a landing page for a limited time
                     </p>
                     <div class="tech-used">
                         <img class="tech-used-icons" src="icons/drupal.svg" alt="">
@@ -261,10 +250,8 @@
                 </a>
                 <div class="project-info">
                     <h3 class="project-title">Bulk Author Update</h3>
-                    <p class="project-description">This module allows the user to update the author of nodes in bulk. The user can configure the "new author" in a configuration page and use
-                        the attached view to select which nodes should be update
-                        <br>
-                        This module already existed as a Drupal 7 module. I made the port to Drupal 8 trying to keep all the previous features. The module is Drupal 9 ready too.
+                    <p class="project-description">A drupal module that allows the user to update the author of nodes in bulk.
+
                     </p>
                     <div class="tech-used">
                         <img class="tech-used-icons" src="icons/drupal.svg" alt="">
@@ -281,10 +268,7 @@
                 </a>
                 <div class="project-info">
                     <h3 class="project-title">Select2 Multicheck</h3>
-                    <p class="project-description">This module module provides a new widget for select2 module users.
-                        This widget allows multi selection while retaining a dropdown approach.
-                        <br>
-                        This module is full compatible with Drupal 9.
+                    <p class="project-description">A drupal module that provides a net widget for select2 module users.
                     </p>
                     <div class="tech-used">
                         <img class="tech-used-icons" src="icons/drupal.svg" alt="">
@@ -301,10 +285,7 @@
                 </a>
                 <div class="project-info">
                     <h3 class="project-title">Url Restriction By Role</h3>
-                    <p class="project-description">This module provides a simple way for users to
-                        configure restrictions in the access of urls using the roles available for the platform.
-                        <br>
-                        This module is full compatible with Drupal 9.
+                    <p class="project-description">A drupal module that provides url restrictions by role.
                     </p>
                     <div class="tech-used">
                         <img class="tech-used-icons" src="icons/drupal.svg" alt="">
@@ -329,7 +310,9 @@
         </a>
         <br>
         <span class="signature">
-            © Nelson Alves <span><script>document.write(new Date().getFullYear())</script></span> All rights reserved
+            © Nelson Alves <span>
+                <script>document.write(new Date().getFullYear())</script>
+            </span> All rights reserved
         </span>
 
     </footer>

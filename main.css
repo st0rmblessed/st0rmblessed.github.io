@@ -6,16 +6,20 @@
 
 html{
     scroll-behavior: smooth;
+    font-family: "Roboto",sans-serif
 }
 
 body{
     margin: 0;
     background:#fff;
-    font-family: "Fira Sans",-apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Roboto", "Oxygen", "Droid Sans", "Ubuntu", "Cantarell", "Helvetica Neue";
 }
 
 section{
-    /* padding: 40px 15%; */
+    background-color: #272935;
+}
+
+section:nth-of-type(2n){
+    background-color: #23252f;
 }
 
 footer{
@@ -29,7 +33,9 @@ h2{
     text-align: center;
     font-size: 3em;
     margin-top: 0px;
-    color: #2c4247
+    color: #98a6ad;
+    font-family: "Montserrat",sans-serif;
+font-weight: 400;
 }
 
 button{
@@ -88,6 +94,10 @@ hr{
     margin: 0 15%;
 }
 
+img {
+
+}
+
 
 
 #name{
@@ -104,16 +114,8 @@ hr{
 }
 
 #intro{
-  -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.1),0 1px 6px rgba(0,0,0,.15);
-background-color: #fff;
-border-radius: 5px;
-box-shadow: 0 1px 2px rgba(0,0,0,.1),0 1px 6px rgba(0,0,0,.15);
-justify-self: center;
-margin: -180px auto 0 auto;
-max-width: 780px;
-padding: 3.45rem 1.5rem;
-position: relative;
-text-align: center;
+    display: flex;
+    margin-top: 59px;
 }
 
 
@@ -125,13 +127,6 @@ text-align: center;
     #name{
         height: 250px;
     }
-}
-
-#title{
-  padding: 0;
-  color: #00b7ff;
-  margin-bottom: 1.875rem;
-  font-size: 2em;
 }
 
 @media screen and (max-width: 768px) {
@@ -154,7 +149,21 @@ text-align: center;
     align-items: center;
 }
 
+.container{
+    display: flex;
+}
 
+.info{
+flex: 0 0 33.3333%;
+max-width: 33.33333%;
+padding: 0 10px;
+}
+
+.biography{
+    flex: 0 0 66.6666%;
+    max-width: 66.6666%;
+    padding: 0 10px;
+}
 
 .navbar-container{
     display: flex;
@@ -223,7 +232,8 @@ text-align: center;
     justify-content: center;
     align-items: center;
     margin-bottom: 10%;
-    color: #2c4247;
+    color:#fff;
+    font-family: "Montserrat",sans-serif;
 }
 
 .dropdown-menu{
@@ -282,34 +292,10 @@ text-align: center;
 }
 
 .projects-item{
-  background: -webkit-gradient(linear,left top,left bottom,from(rgba(143,148,251,.7)),to(#ef93ec));
-  background: linear-gradient(rgba(143,148,251,.7),#ef93ec);
-width: 100%;
+width: 700px;
 }
-.projects-item:nth-of-type(2){
-  background: -webkit-gradient(linear,left top,left bottom,from(#005bea),to(#00c6fb));
-  background: linear-gradient(#005bea,#00c6fb);
-}
-.projects-item:nth-of-type(3){
-  background: -webkit-gradient(linear,left top,left bottom,from(rgba(252,96,118,.9)),to(rgba(228,54,113,.7)));
-  background: linear-gradient(rgba(252,96,118,.9),rgba(228,54,113,.7));
-}
-.projects-item:nth-of-type(4){
-  background: -webkit-gradient(linear,left top,left bottom,from(#fbc8d4),to(rgba(213,69,165,.77)));
-  background: linear-gradient(#fbc8d4,rgba(213,69,165,.77));
-}
-.projects-item:nth-of-type(5){
-  background: -webkit-gradient(linear,left top,left bottom,from(#fbc8d4),to(rgba(213,69,165,.77)));
-  background: linear-gradient(#fbc8d4,rgba(52, 140, 146, 0.77));
-}
-.projects-item:nth-of-type(6){
-  background: -webkit-gradient(linear,left top,left bottom,from(#fbc8d4),to(rgba(213,69,165,.77)));
-  background: linear-gradient(#fbc8d4,rgba(143, 78, 78, 0.77));
-}
-.projects-item:nth-of-type(7){
-  background: -webkit-gradient(linear,left top,left bottom,from(#fbc8d4),to(rgba(213,69,165,.77)));
-  background: linear-gradient(#fbc8d4,rgba(94, 129, 97, 0.77));
-}
+
+
 
 .project{
   position: relative;
@@ -321,7 +307,12 @@ text-shadow: 0 1px 1px rgba(0,0,0,.15);
 width: 100%;
 display: flex;
 flex-direction: row;
-margin: 70px auto;
+margin: 0 auto;
+}
+
+.project-link{
+    flex: 0 0 25%;
+    text-align: center;
 }
 
 @media screen and (max-width: 768px) {
@@ -335,15 +326,15 @@ margin: 70px auto;
 
 
 .project-img{
-  -webkit-box-shadow: 0 5px 20px rgba(86,18,142,.1),0 3px 30px rgba(86,18,142,.2);
   -webkit-transition: all .3s cubic-bezier(.25,.8,.25,1);
   border-radius: 3px;
-  box-shadow: 0 5px 20px rgba(86,18,142,.1),0 3px 30px rgba(86,18,142,.2);
   margin-bottom: 1.122rem;
   transition: all .3s cubic-bezier(.25,.8,.25,1);
   background: black;
-  height: 100%;
-  width: 100%;
+  max-width:150px;
+  max-height:150px;
+  width: auto;
+  height: auto;
 }
 
 .project-info{
@@ -364,7 +355,7 @@ margin-left: 40px;
  }
 
 .project-title{
-  font-family: font-medium;
+    font-family: "Montserrat",sans-serif;
 font-size: 1.4238rem;
 line-height: 1.875rem;
 margin-bottom: .375rem;
@@ -375,6 +366,8 @@ margin: 0;
   font-size: .95rem;
   line-height: 1.5rem;
   margin-bottom: 1.5rem;
+  color: #f8f8f2;
+  font-family: "Montserrat",sans-serif;
 }
 
 .tech-used{
