@@ -3,7 +3,6 @@
     box-sizing: border-box;
 }
 
-
 html{
     scroll-behavior: smooth;
     font-family: "Roboto",sans-serif
@@ -27,37 +26,41 @@ footer{
     text-align: center;
 }
 
+p{
+    margin-top: 0px;
+}
+
 h2{
     padding: 40px;
-    text-transform: uppercase;
     text-align: center;
     font-size: 3em;
     margin-top: 0px;
     color: #98a6ad;
     font-family: "Montserrat",sans-serif;
-font-weight: 400;
+    font-weight: 400;
+    margin-bottom: 0px;
 }
 
-button{
+h3{
+    color: #98a6ad;
+    font-family: "Montserrat",sans-serif;
+    font-weight: 400;
+}
+
+.menu{
     border: 0;
     display: none;
     padding-right: 20px;
     position: relative;
-    background-color:#03A9F4;
+    background-color:#fff;
 }
 
 button:hover{
     cursor: pointer;
 }
 
-@media screen and (max-width: 768px) {
-    button{
-        display: block;
-    }
-}
-
 svg path {
-    fill:#fff;
+    fill:#000;
 }
 
 nav{
@@ -67,22 +70,7 @@ nav{
     position: fixed;
     top: 0;
     z-index: 2;
-    background-color:#03A9F4;
-}
-
-
-
-@media screen and (max-width: 768px) {
-    nav{
-       justify-content: space-between;
-    }
-    #intro{
-        max-width: 300px;
-    }
-}
-
-li{
-    list-style-type: none;
+    background-color:#fff;
 }
 
 a{
@@ -94,54 +82,56 @@ hr{
     margin: 0 15%;
 }
 
-img {
-
-}
-
-
-
-#name{
-  margin-top: 61px;
-  height: 300px;
-  background-color: #03A9F4;
-  color: #fff;
-  font-family: font-medium;
-  font-size: 1.6018rem;
-  line-height: 2.25rem;
-  text-align: center;
-  text-shadow: 0 1px 1px rgba(0,0,0,.15);
-  padding-top: 20px;
-}
-
 #intro{
     display: flex;
     margin-top: 59px;
+    padding: 0 50px 50px;
 }
 
-
-@media screen and (max-width: 768px) {
-    #intro{
-        max-width: 300px;
-        padding: 1.45rem 1.45rem;
-    }
-    #name{
-        height: 250px;
-    }
+.show{
+    display: block !important;
 }
 
-@media screen and (max-width: 768px) {
-    #title{
-        font-size: 1.5em;
-    }
+.picture{
+    border-radius: 50%;
+    width: 270px;
+    height: 270px;
+    margin: 0 auto;
+    object-fit: cover;
 }
 
-#text{
-  color: #6c80a4;
-  letter-spacing: .2px;
-  max-width: 500px;
-  margin: 0 auto;
+.button{
+    border: 0;
+    padding: 20px;
+    background-color: #455a64;
+    font-size: 0.95rem;
+    color: #f8f8f2;
 }
 
+.button:hover{
+    background-color: #718792;
+}
+
+#project-filter > .button:first-child{
+    border-radius: 10px 0 0 10px;
+}
+
+#project-filter > .button:last-child{
+    border-radius: 0 10px 10px 0;
+}
+
+.profile-name{
+    text-transform: unset;
+    padding: 10px;
+    color: #fff;
+    font-size: 1.5em;
+}
+
+.profile-job{
+    text-transform: unset;
+    padding: 10px;
+    margin: 0;
+}
 
 .toolbox{
     display: flex;
@@ -149,40 +139,51 @@ img {
     align-items: center;
 }
 
-.container{
-    display: flex;
+.toolbox-item{
+    text-align: center;
 }
 
 .info{
-flex: 0 0 33.3333%;
-max-width: 33.33333%;
-padding: 0 10px;
+    padding: 0 10px;
+    text-align: center;
+    padding-top: 40px;
 }
 
 .biography{
-    flex: 0 0 66.6666%;
-    max-width: 66.6666%;
-    padding: 0 10px;
+    padding: 0 30px;
+    color: #f8f8f2;
+}
+
+.list-item{
+    margin-bottom: 5px;
+}
+
+.other{
+    display: flex;
+}
+
+.interests{
+    flex: 0 50%;
+}
+
+.education{
+    flex: 0 50%;
 }
 
 .navbar-container{
     display: flex;
     justify-content: space-evenly;
     width: 100%;
-    background:  #03A9F4;
     margin: 0;
     padding: 0;
-
 }
 
-@media screen and (max-width: 768px) {
-    .navbar-container{
-        display: none;
-    }
+.navbar-container > li{
+    list-style-type: none;
 }
 
 .navbar-container > li > a {
-    color: #fff;
+    color: #000;
     text-decoration: none;
     padding: 20px;
     display: block;
@@ -215,12 +216,13 @@ padding: 0 10px;
     align-items: center;
     flex-wrap: wrap;
     position: relative;
-    padding-bottom: 70px;
+    padding: 0 50px 70px;
 }
 
 .scale{
     transition: all 0.5s;
 }
+
 .scale:hover{
     transform: scale(1.1);
     cursor: pointer;
@@ -239,7 +241,7 @@ padding: 0 10px;
 .dropdown-menu{
     position: absolute;
     display: none;
-    background-color:#03A9F4;
+    background-color:#fff;
     top: 42px;
     width: 100%;
     padding: 0;
@@ -255,17 +257,18 @@ padding: 0 10px;
 }
 
 .logo{
-    color: #fff;
+    color: #000;
     font-weight: bold;
 }
 
 .dropdown-menu-items{
     padding: 20px;
     text-align: center;
+    list-style-type: none;
 }
 
 .dropdown-menu-items > a {
-    color: #fff;
+    color: #000;
 }
 
 .signature{
@@ -274,14 +277,17 @@ padding: 0 10px;
 
 
 .hr-dropdown{
-    color:#9feaf9;
+    color:#000;
     margin: 0 15%;
 }
-
 
 .navbar-section:hover{
   transform: scale(1.1);
   transition: 0.1s;
+}
+
+#project-filter{
+    font-size: 0;
 }
 
 .projects{
@@ -292,22 +298,25 @@ padding: 0 10px;
 }
 
 .projects-item{
-width: 700px;
+    display: none;
 }
 
-
+.active{
+    background-color: #1c313a;
+    font-weight: 700;
+}
 
 .project{
-  position: relative;
-  color: #fff;
-justify-self: center;
-max-width: 1000px;
-padding: 3.45rem 1.875rem;
-text-shadow: 0 1px 1px rgba(0,0,0,.15);
-width: 100%;
-display: flex;
-flex-direction: row;
-margin: 0 auto;
+    position: relative;
+    color: #fff;
+    justify-self: center;
+    max-width: 1000px;
+    padding: 3.45rem 1.875rem;
+    text-shadow: 0 1px 1px rgba(0,0,0,.15);
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
 }
 
 .project-link{
@@ -315,59 +324,36 @@ margin: 0 auto;
     text-align: center;
 }
 
-@media screen and (max-width: 768px) {
-    .project{
-        flex-direction: column;
-    }
-    .project-link{
-        margin: 0 auto;
-    }
-}
-
-
 .project-img{
-  -webkit-transition: all .3s cubic-bezier(.25,.8,.25,1);
-  border-radius: 3px;
-  margin-bottom: 1.122rem;
-  transition: all .3s cubic-bezier(.25,.8,.25,1);
-  background: black;
-  max-width:150px;
-  max-height:150px;
-  width: auto;
-  height: auto;
+    -webkit-transition: all .3s cubic-bezier(.25,.8,.25,1);
+    border-radius: 3px;
+    margin-bottom: 1.122rem;
+    transition: all .3s cubic-bezier(.25,.8,.25,1);
+    background: black;
+    max-width:150px;
+    max-height:150px;
+    width: auto;
+    height: auto;
 }
 
 .project-info{
-margin-left: 40px;
+    margin-left: 40px;
 }
-
-@media screen and (max-width: 768px) {
-   .project-info{
-       margin-left: 0;
-   }
-}
-
-@media screen and (max-width: 320px) {
-    .project-img{
-        height: 200px;
-        width: 250px;
-    }
- }
 
 .project-title{
     font-family: "Montserrat",sans-serif;
-font-size: 1.4238rem;
-line-height: 1.875rem;
-margin-bottom: .375rem;
-margin: 0;
-
+    font-size: 1.4238rem;
+    line-height: 1.875rem;
+    margin-bottom: .375rem;
+    margin: 0;
 }
+
 .project-description{
-  font-size: .95rem;
-  line-height: 1.5rem;
-  margin-bottom: 1.5rem;
-  color: #f8f8f2;
-  font-family: "Montserrat",sans-serif;
+    font-size: .95rem;
+    line-height: 1.5rem;
+    margin-bottom: 1.5rem;
+    color: #f8f8f2;
+    font-family: "Montserrat",sans-serif;
 }
 
 .tech-used{
@@ -377,4 +363,91 @@ margin: 0;
 .tech-used-icons{
     width: 40px;
     height: 35px;
+}
+
+ @media screen and (max-width: 320px) {
+     .project-img{
+         height: 200px;
+         width: 250px;
+     }
+  }
+
+@media screen and (min-width: 768px) {
+    .info{
+        flex: 0 0 33.3333%;
+        max-width: 33.3333%;
+    }
+
+    .biography{
+        flex: 0 0 66.6666%;
+        max-width: 66.6666%;
+    }
+
+    .projects-item{
+        width: 700px;
+    }
+
+    .toolbox-item{
+         width: 25%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    nav{
+        justify-content: space-between;
+     }
+
+     #intro{
+         flex-direction: column;
+         padding: 0 20px 20px !important;
+     }
+
+    h2{
+        font-size: 2rem;
+    }
+
+    .biography{
+        padding: 0 10px;
+    }
+
+    .project{
+        flex-direction: column;
+    }
+
+    .project-link{
+        margin: 0 auto;
+    }
+
+    .labels{
+        font-size: 20px;
+    }
+
+    .button{
+        padding: 15px;
+    }
+
+    .project-info{
+        margin-left: 0;
+    }
+
+    .navbar-container{
+        display: none;
+    }
+
+    #name{
+        height: 250px;
+    }
+
+    #title{
+        font-size: 1.5em;
+    }
+
+    .menu{
+        display: block;
+    }
+
+    .toolbox-icons{
+        flex-direction: column;
+    }
 }

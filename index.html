@@ -31,7 +31,7 @@
             <li class="navbar-section"><a href="#contacts">Contacts</a></li>
 
         </ul>
-        <button>
+        <button class="menu">
             <svg height="24" viewBox="0 0 12 16" version="1.1" width="18" aria-hidden="true">
                 <path fill-rule="evenodd"
                     d="M11.41 9H.59C0 9 0 8.59 0 8c0-.59 0-1 .59-1H11.4c.59 0 .59.41.59 1 0 .59 0 1-.59 1h.01zm0-4H.59C0 5 0 4.59 0 4c0-.59 0-1 .59-1H11.4c.59 0 .59.41.59 1 0 .59 0 1-.59 1h.01zM.59 11H11.4c.59 0 .59.41.59 1 0 .59 0 1-.59 1H.59C0 13 0 12.59 0 12c0-.59 0-1 .59-1z">
@@ -39,7 +39,6 @@
             </svg>
         </button>
         <ul class="dropdown-menu">
-
             <li class="dropdown-menu-items"><a href="#toolbox">Toolbox</a></li>
             <hr class="hr-dropdown">
             <li class="dropdown-menu-items"><a href="#projects">Projects</a></li>
@@ -49,150 +48,179 @@
     </nav>
 
     <section id="intro">
-            <div class="info">I have a Masters in Mechanical Engineers but I'm currently working as a web developer.
-                The objective of this page is to showcase some of my personal projects, built to increase my knowledge
-                and expertise in the web world.</div>
-            <div class="biography">
-                <h2>About me</h2>
-                <p>lorem ipsum</p>
-                <p>lorem ipsum</p>
-                <p>lorem ipsum</p>
-                <p>lorem ipsum</p>
-            </div>
-    </section>
+        <div class="info">
+            <img class="picture" src="icons/profile-picture.jpg" alt="profile-picture">
+            <h2 class="profile-name">Nelson dos Santos Alves</h2>
+            <h3 class="profile-job">Web Developer</h3>
+        </div>
+        <div class="biography">
+            <h2>About me</h2>
+            <p>I am a Mechanical Engineer graduated from Instituto Superior Técnico, Lisbon.
+                Currently working for NTT Data in Portugal.
+            </p>
+            <p>I begun my career in IT as a functional analyst having moved to web development a short while after.
+                Currently I work with Drupal having developed some contributed modules that are published on drupal.org. </p>
+            <p>Besides Drupal, I enjoy working on personal projects related with programming.
+                At the moment, I'm dabbling in game development using Godot as my engine.</p>
 
+            <div class="other">
+                <div class="interests">
+                    <h3>Interests</h3>
+                    <ul>
+                        <li class="list-item">Web Development</li>
+                        <li class="list-item">Game Development</li>
+                        <li class="list-item">Cryptocurrencies</li>
+                        <li class="list-item">Stock Market</li>
+                    </ul>
+                </div>
+                <div class="education">
+                    <h3>Education</h3>
+                    <ul>
+                        <li class="list-item">MSc in Mechanical Engineering</li>
+                        <li class="list-item">Certified Scrum Master</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <section class="toolbox" id="toolbox">
         <h2>Toolbox</h2>
         <div class="toolbox-icons">
-            <div>
-                <a href="https://en.wikipedia.org/wiki/HTML5" target="_blank"><img class="scale" src="icons/html5.svg"
-                        alt="" width="300px" height="150px"></a>
-                <span class="labels">HTML5</span>
-            </div>
 
-            <div>
-                <a href="https://en.wikipedia.org/wiki/Cascading_Style_Sheets" target="_blank"><img class="scale"
-                        src="icons/css3.svg" alt="" width="300px" height="150px"></a>
-                <span class="labels">CSS3</span>
-            </div>
-            <div>
+            <div class="toolbox-item">
                 <a href="https://en.wikipedia.org/wiki/JavaScript" target="_blank"><img class="scale" src="icons/js.svg"
-                        alt="" width="300px" height="150px"></a>
+                        alt="js-icon" width="150px" height="150px"></a>
                 <span class="labels">JavaScript</span>
             </div>
-            <div>
-                <a href="https://nodejs.org/en/" target="_blank"><img class="scale" src="icons/nodejs.svg" alt=""
-                        width="300px" height="150px"></a>
+            <div class="toolbox-item">
+                <a href="https://nodejs.org/en/" target="_blank"><img class="scale" src="icons/nodejs.svg" alt="nodejs-icon"
+                        width="150px" height="150px"></a>
                 <span class="labels">Node.js</span>
             </div>
-            <div>
-                <a href="https://socket.io/" target="_blank"><img class="scale" src="icons/socketio.svg" alt=""
-                        width="300px" height="150px"></a>
+            <div class="toolbox-item">
+                <a href="https://socket.io/" target="_blank"><img class="scale" src="icons/socketio.svg" alt="socket-icon"
+                        width="150px" height="150px"></a>
                 <span class="labels">Socket.io</span>
             </div>
-            <div>
-                <a href="https://angular.io/" target="_blank"><img class="scale" src="icons/angular.svg" alt=""
-                        width="300px" height="150px"></a>
+            <div class="toolbox-item">
+                <a href="https://angular.io/" target="_blank"><img class="scale" src="icons/angular.svg" alt="angular-icon"
+                        width="150px" height="150px"></a>
                 <span class="labels">Angular</span>
             </div>
-            <div>
-                <a href="https://ionicframework.com/" target="_blank"><img class="scale" src="icons/ionic.svg" alt=""
-                        width="300px" height="150px"></a>
+            <div class="toolbox-item">
+                <a href="https://ionicframework.com/" target="_blank"><img class="scale" src="icons/ionic.svg" alt="ionic-icon"
+                        width="150px" height="150px"></a>
                 <span class="labels">Ionic</span>
             </div>
-            <div>
-                <a href="https://www.mongodb.com/" target="_blank"><img class="scale" src="icons/mongodb.svg" alt=""
-                        width="300px" height="150px"></a>
+            <div class="toolbox-item">
+                <a href="https://www.mongodb.com/" target="_blank"><img class="scale" src="icons/mongodb.svg" alt="mongodb-icon"
+                        width="150px" height="150px"></a>
                 <span class="labels">MongoDB</span>
             </div>
-            <div>
-                <a href="https://www.php.net/" target="_blank"><img class="scale" src="icons/php.svg" alt=""
-                        width="300px" height="150px"></a>
+            <div class="toolbox-item">
+                <a href="https://www.php.net/" target="_blank"><img class="scale" src="icons/php.svg" alt="php-icon"
+                        width="150px" height="150px"></a>
                 <span class="labels">PHP</span>
             </div>
-            <div>
-                <a href="https://www.drupal.org/8" target="_blank"><img class="scale" src="icons/drupal.svg" alt=""
-                        width="300px" height="150px"></a>
+            <div class="toolbox-item">
+                <a href="https://www.drupal.org/8" target="_blank"><img class="scale" src="icons/drupal.svg" alt="drupal-icon"
+                        width="150px" height="150px"></a>
                 <span class="labels">Drupal 9</span>
             </div>
-            <div>
-                <a href="https://github.com/" target="_blank"><img class="scale" src="icons/github.svg" alt=""
-                        width="300px" height="150px"></a>
+            <div class="toolbox-item">
+                <a href="https://www.mysql.com/" target="_blank"><img class="scale" src="icons/mysql.png"
+                        alt="mysql-icon" width="150px" height="150px"></a>
+                <span class="labels">MySql</span>
+            </div>
+
+            <div class="toolbox-item">
+                <a href="https://godotengine.org/" target="_blank"><img class="scale"
+                        src="icons/godot.svg" alt="godot-icon" width="150px" height="150px"></a>
+                <span class="labels">Godot</span>
+            </div>
+            <div class="toolbox-item">
+                <a href="https://github.com/" target="_blank"><img class="scale" src="icons/github.svg" alt="github-icon"
+                        width="150px" height="150px"></a>
                 <span class="labels">GitHub</span>
             </div>
-            <div>
-                <a href="https://git-scm.com/" target="_blank"><img class="scale" src="icons/git.svg" alt=""
-                        width="300px" height="150px"></a>
+            <div class="toolbox-item">
+                <a href="https://git-scm.com/" target="_blank"><img class="scale" src="icons/git.svg" alt="git-icon"
+                        width="150px" height="150px"></a>
                 <span class="labels">Git</span>
             </div>
         </div>
     </section>
 
     <section class="projects" id="projects">
-
         <h2>Projects</h2>
-        <div>Projects toolset</div>
+        <div id="project-filter">
+            <button class="button active" onclick="filterSelection('all')">All</button>
+            <button class="button" onclick="filterSelection('node')">Node</button>
+            <button class="button" onclick="filterSelection('ionic')">Ionic</button>
+            <button class="button" onclick="filterSelection('php')">PHP</button>
+            <button class="button" onclick="filterSelection('drupal')">Drupal</button>
+        </div>
         <div class="projects-item">
             <div class="project">
                 <a class="project-link" target="_blank" href="https://integra-te.github.io/">
-                    <img class="project-img" src="icons/proj1.PNG" alt="">
+                    <img class="project-img" src="icons/proj1.PNG" alt="project-screenshot">
                 </a>
                 <div class="project-info">
                     <h3 class="project-title">Integra-te</h3>
                     <p class="project-description">A simple website hosted on github for a yoga teacher.
                     </p>
                     <div class="tech-used">
-                        <img class="tech-used-icons" src="icons/html5.svg" alt="">
-                        <img class="tech-used-icons" src="icons/css3.svg" alt="">
+                        <img class="tech-used-icons" src="icons/html5.svg" alt="html-icon">
+                        <img class="tech-used-icons" src="icons/css3.svg" alt="css-icon">
                     </div>
                 </div>
             </div>
 
         </div>
-        <div class="projects-item">
+        <div class="projects-item node">
             <div class="project">
                 <a class="project-link" target="_blank" href="https://github.com/st0rmblessed/weather-app">
-                    <img class="project-img" src="icons/proj2.PNG" alt="">
+                    <img class="project-img" src="icons/proj2.PNG" alt="project-screenshot">
                 </a>
                 <div class="project-info">
                     <h3 class="project-title">Weather App</h3>
                     <p class="project-description">A weather app that uses OpenWeatherMap API to do display data.
                     </p>
                     <div class="tech-used">
-                        <img class="tech-used-icons" src="icons/html5.svg" alt="">
-                        <img class="tech-used-icons" src="icons/css3.svg" alt="">
-                        <img class="tech-used-icons" src="icons/js.svg" alt="">
-                        <img class="tech-used-icons" src="icons/nodejs.svg" alt="">
+                        <img class="tech-used-icons" src="icons/html5.svg" alt="html-icon">
+                        <img class="tech-used-icons" src="icons/css3.svg" alt="css-icon">
+                        <img class="tech-used-icons" src="icons/js.svg" alt="js-icon>
+                        <img class="tech-used-icons" src="icons/nodejs.svg" alt="nodejs-icon">
                     </div>
                 </div>
             </div>
 
         </div>
-        <div class="projects-item">
+        <div class="projects-item node">
             <div class="project">
                 <a class="project-link" target="_blank" href="https://github.com/st0rmblessed/Chat-App">
-                    <img class="project-img" src="icons/proj3.PNG" alt="">
+                    <img class="project-img" src="icons/proj3.PNG" alt="project-screenshot">
                 </a>
                 <div class="project-info">
                     <h3 class="project-title">Chat App</h3>
                     <p class="project-description">An app that serves as a chat room leveraging socket.io library.
                     </p>
                     <div class="tech-used">
-                        <img class="tech-used-icons" src="icons/html5.svg" alt="">
-                        <img class="tech-used-icons" src="icons/css3.svg" alt="">
-                        <img class="tech-used-icons" src="icons/js.svg" alt="">
-                        <img class="tech-used-icons" src="icons/nodejs.svg" alt="">
-                        <img class="tech-used-icons" src="icons/socketio.svg" alt="">
+                        <img class="tech-used-icons" src="icons/html5.svg" alt="html-icon">
+                        <img class="tech-used-icons" src="icons/css3.svg" alt="css-icon">
+                        <img class="tech-used-icons" src="icons/js.svg" alt="js-icon">
+                        <img class="tech-used-icons" src="icons/nodejs.svg" alt="nodejs-icon">
+                        <img class="tech-used-icons" src="icons/socketio.svg" alt="socket-icon">
                     </div>
                 </div>
             </div>
 
         </div>
-        <div class="projects-item">
+        <div class="projects-item ionic">
             <div class="project">
                 <a class="project-link" target="_blank" href="https://github.com/st0rmblessed/Net-Wage-App">
-                    <img class="project-img" src="icons/proj4.PNG" alt="">
+                    <img class="project-img" src="icons/proj4.PNG" alt="project-screenshot">
                 </a>
                 <div class="project-info">
                     <h3 class="project-title">Net Wage / Calculator App</h3>
@@ -200,103 +228,161 @@
                         (for portuguese residents).
                     </p>
                     <div class="tech-used">
-                        <img class="tech-used-icons" src="icons/html5.svg" alt="">
-                        <img class="tech-used-icons" src="icons/css3.svg" alt="">
-                        <img class="tech-used-icons" src="icons/js.svg" alt="">
-                        <img class="tech-used-icons" src="icons/ionic.svg" alt="">
+                        <img class="tech-used-icons" src="icons/html5.svg" alt="html-icon">
+                        <img class="tech-used-icons" src="icons/css3.svg" alt="css-icon">
+                        <img class="tech-used-icons" src="icons/js.svg" alt="js-icon">
+                        <img class="tech-used-icons" src="icons/ionic.svg" alt="ionic-icon">
                     </div>
                 </div>
             </div>
         </div>
-
-        <div class="projects-item">
+        <div class="projects-item drupal php">
             <div class="project">
                 <a class="project-link" target="_blank" href="https://www.drupal.org/project/save_entities">
-                    <img class="project-img" src="icons/drupal-proj1.PNG" alt="">
+                    <img class="project-img" src="icons/drupal-proj1.PNG" alt="project-screenshot">
                 </a>
                 <div class="project-info">
                     <h3 class="project-title">Saving Entities</h3>
                     <p class="project-description">A drupal module to save nodes and media in bulk.
                     </p>
                     <div class="tech-used">
-                        <img class="tech-used-icons" src="icons/drupal.svg" alt="">
-                        <img class="tech-used-icons" src="icons/php.svg" alt="">
+                        <img class="tech-used-icons" src="icons/drupal.svg" alt="drupal-icon">
+                        <img class="tech-used-icons" src="icons/php.svg" alt="php-icon">
                     </div>
                 </div>
             </div>
         </div>
-
-        <div class="projects-item">
+        <div class="projects-item drupal php">
             <div class="project">
                 <a class="project-link" target="_blank" href="https://www.drupal.org/project/landing_page_scheduler">
-                    <img class="project-img" src="icons/drupal-proj2.PNG" alt="">
+                    <img class="project-img" src="icons/drupal-proj2.PNG" alt="project-screenshot">
                 </a>
                 <div class="project-info">
                     <h3 class="project-title">Landing Page Scheduler</h3>
-                    <p class="project-description">A drupal module to set a landing page for a limited time
+                    <p class="project-description">A drupal module to set a landing page for a limited time.
                     </p>
                     <div class="tech-used">
-                        <img class="tech-used-icons" src="icons/drupal.svg" alt="">
-                        <img class="tech-used-icons" src="icons/php.svg" alt="">
+                        <img class="tech-used-icons" src="icons/drupal.svg" alt="drupal-icon">
+                        <img class="tech-used-icons" src="icons/php.svg" alt="php-icon">
                     </div>
                 </div>
             </div>
         </div>
-
-        <div class="projects-item">
+        <div class="projects-item drupal php">
             <div class="project">
                 <a class="project-link" target="_blank" href="https://www.drupal.org/project/bulk_author_update">
-                    <img class="project-img" src="icons/drupal-proj3.PNG" alt="">
+                    <img class="project-img" src="icons/drupal-proj3.PNG" alt="project-screenshot">
                 </a>
                 <div class="project-info">
                     <h3 class="project-title">Bulk Author Update</h3>
-                    <p class="project-description">A drupal module that allows the user to update the author of nodes in bulk.
+                    <p class="project-description">A drupal module that allows the user to update the author of nodes in
+                        bulk.
 
                     </p>
                     <div class="tech-used">
-                        <img class="tech-used-icons" src="icons/drupal.svg" alt="">
-                        <img class="tech-used-icons" src="icons/php.svg" alt="">
+                        <img class="tech-used-icons" src="icons/drupal.svg" alt="drupal-icon">
+                        <img class="tech-used-icons" src="icons/php.svg" alt="php-icon">
                     </div>
                 </div>
             </div>
         </div>
-
-        <div class="projects-item">
+        <div class="projects-item drupal php">
             <div class="project">
                 <a class="project-link" target="_blank" href="https://www.drupal.org/project/select2_multicheck">
-                    <img class="project-img" src="icons/select2_multicheck.PNG" alt="">
+                    <img class="project-img" src="icons/select2_multicheck.PNG" alt="project-screenshot">
                 </a>
                 <div class="project-info">
                     <h3 class="project-title">Select2 Multicheck</h3>
                     <p class="project-description">A drupal module that provides a net widget for select2 module users.
                     </p>
                     <div class="tech-used">
-                        <img class="tech-used-icons" src="icons/drupal.svg" alt="">
-                        <img class="tech-used-icons" src="icons/php.svg" alt="">
+                        <img class="tech-used-icons" src="icons/drupal.svg" alt="drupal-icon">
+                        <img class="tech-used-icons" src="icons/php.svg" alt="php-icon">
                     </div>
                 </div>
             </div>
         </div>
-
-        <div class="projects-item">
+        <div class="projects-item drupal php">
             <div class="project">
                 <a class="project-link" target="_blank" href="https://www.drupal.org/project/url_restriction_by_role">
-                    <img class="project-img" src="icons/ulr_restriction_by_role.PNG" alt="">
+                    <img class="project-img" src="icons/ulr_restriction_by_role.PNG" alt="project-screenshot">
                 </a>
                 <div class="project-info">
                     <h3 class="project-title">Url Restriction By Role</h3>
                     <p class="project-description">A drupal module that provides url restrictions by role.
                     </p>
                     <div class="tech-used">
-                        <img class="tech-used-icons" src="icons/drupal.svg" alt="">
-                        <img class="tech-used-icons" src="icons/php.svg" alt="">
+                        <img class="tech-used-icons" src="icons/drupal.svg" alt="drupal-icon">
+                        <img class="tech-used-icons" src="icons/php.svg" alt="php-icon">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="projects-item drupal php">
+            <div class="project">
+                <a class="project-link" target="_blank" href="https://www.drupal.org/project/crypto_widget">
+                    <img class="project-img" src="icons/crypto_widget.PNG" alt="project-screenshot">
+                </a>
+                <div class="project-info">
+                    <h3 class="project-title">Crypto Widget</h3>
+                    <p class="project-description">A drupal module to display cryptocurrencies price.
+                    </p>
+                    <div class="tech-used">
+                        <img class="tech-used-icons" src="icons/drupal.svg" alt="drupal-icon">
+                        <img class="tech-used-icons" src="icons/php.svg" alt="php-icon">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="projects-item php">
+            <div class="project">
+                <a class="project-link" target="_blank" href="https://github.com/st0rmblessed/blockchain-php">
+                    <img class="project-img" src="icons/blockchain.PNG" alt="project-screenshot">
+                </a>
+                <div class="project-info">
+                    <h3 class="project-title">Blockchain</h3>
+                    <p class="project-description">A simple blockchain made in PHP to learn the basics.
+                    </p>
+                    <div class="tech-used">
+                        <img class="tech-used-icons" src="icons/php.svg" alt="php-icon">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="projects-item node">
+            <div class="project">
+                <a class="project-link" target="_blank" href="https://github.com/st0rmblessed/drupal_security_scraper">
+                    <img class="project-img" src="icons/drupal_security_scraper.PNG" alt="project-screenshot">
+                </a>
+                <div class="project-info">
+                    <h3 class="project-title">Drupal Security Scraper</h3>
+                    <p class="project-description">A simple scraper to check if there are security updates published in drupal.org.
+                    </p>
+                    <div class="tech-used">
+                        <img class="tech-used-icons" src="icons/nodejs.svg" alt="nodejs-icon">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="projects-item node">
+            <div class="project">
+                <a class="project-link" target="_blank" href="https://github.com/st0rmblessed/contrib_update_scraper">
+                    <img class="project-img" src="icons/contrib_update_scraper.PNG" alt="project-screenshot">
+                </a>
+                <div class="project-info">
+                    <h3 class="project-title">Contrib Update Scraper</h3>
+                    <p class="project-description">A simple scraper to gather basic info about contributed modules.
+                    </p>
+                    <div class="tech-used">
+                        <img class="tech-used-icons" src="icons/nodejs.svg" alt="nodejs-icon">
                     </div>
                 </div>
             </div>
         </div>
 
-    </section>
 
+
+    </section>
 
     <footer id="contacts">
         <a href="https://github.com/st0rmblessed" target="_blank">
@@ -312,12 +398,12 @@
         <span class="signature">
             © Nelson Alves <span>
                 <script>document.write(new Date().getFullYear())</script>
-            </span> All rights reserved
+            </span> All rights reserved.
         </span>
-
     </footer>
 
 </body>
+
 <script src="https://code.jquery.com/jquery-3.3.1.min.js"
     integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 <script src="main.js"></script>
